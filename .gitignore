@@ -1,0 +1,10 @@
+build/
+
+test/*.12d
+test/*.cvg
+test/*.dat
+test/*.eig
+test/*.equ
+test/*.frd
+test/*.sta
+test/*.stm
