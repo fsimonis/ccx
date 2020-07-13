@@ -3,6 +3,7 @@ find_path(Spooles_INCLUDE_DIR SPOOLES.h PATH_SUFFIXES spooles)
 
 set(Spooles_INCLUDE_DIRS ${Spooles_INCLUDE_DIR})
 set(Spooles_LIBRARIES ${Spooles_LIBRARY})
+mark_as_advanced(Spooles_LIBRARY Spooles_INCLUDE_DIR)
 
 include(FindPackageHandleStandardArgs)
 find_package_handle_standard_args(Spooles
