@@ -1,4 +1,12 @@
-find_library(ARPACK_LIBRARY arpack)
+
+if(CMAKE_SYSTEM_NAME STREQUAL "Darwin")
+  set(_arpack_suffixed "arpack_MAC")
+else()
+  set(_arpack_suffixed "arpack_INTEL")
+endif()
+
+find_library(ARPACK_LIBRARY NAMES arpack ${_arpack_suffixed})
+unset(_arpack_suffixed)
 
 find_package(LAPACK REQUIRED)
 
